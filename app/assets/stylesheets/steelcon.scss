@@ -1,0 +1,89 @@
+@font-face {
+
+  font-family: 'nouvelle-vague';
+  src: url(asset_path('nouvelle-vague.ttf'));
+
+}
+
+.steel-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  height: 100%;
+  padding-top: 10px;
+
+  @media only screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1 / 4;
+  }
+}
+
+
+
+.steel-header {
+  background-color: #d85e5e;
+  height: auto;
+  box-shadow: 1px 1px 1px 1px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  border-radius: 15px;
+  background: url(asset_path("steelcon/steelcon-logo-wp.png"));
+  background-position: center;
+  background-color: black;  
+  height: 125px;
+  width: auto;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-width: 768px) {
+    background-size: fit;
+    padding: 15px;
+  }
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 15%;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    padding-top: 20%;
+    margin: 0 2.5px;
+  }
+}
+
+}
+
+.steel-content {
+  background: url(asset_path("steelcon/fill_bg.jpg"));
+  opacity: 0.6;
+  background-size: cover;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  border-radius: 15px;
+  padding: 15px 15px;
+  width: auto;
+  margin: 10px 0px;
+  box-shadow: 1px 1px 0 0 black;
+
+  @media only screen and (max-width: 768px) {
+    display: grid;
+    background-size: cover;
+    height: auto;
+    width: 97%;
+    p,h2 {
+      font-family: adler;
+      font-weight: bold;
+    }
+  }
+}
+
+.steel-content p,h2 {
+  color:rgb(0, 0, 0);
+  font-family: adler;
+  font-weight: bold;
+}
